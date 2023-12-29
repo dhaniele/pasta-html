@@ -44,35 +44,35 @@
     <h2>Obsolets Tags</h2>
 <p>W3C https://www.w3.org/TR/2010/WD-html5-20100304/obsolete.html mostra tags que não são mais utilizadas em HTML5.</p>
 <p>HTML5  Foca no significado, não na forma!!!!!</p>
-<h2>Negrito e Itálico</h2>
+    <h2>Negrito e Itálico</h2>
 <p>Utiliza-se a tag < strong >< /strong> para destacar um texto em negrito. <br>Lorem ipsum dolor sit amet consectetur adipisicing elit. <strong>Sequi et aut exercitationem</strong> corrupti inventore saepe. Expedita laboriosam ducimus itaque, ut blanditiis inventore? Consectetur exercitationem culpa possimus quisquam totam. Sed, cumque? <br>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam itaque dolores quod, laboriosam fugiat <strong>optio blanditiis nostrum</strong> ? Dolores, mollitia ea labore placeat porro ducimus iusto, incidunt tenetur excepturi, qui numquam.</p> 
 <p>Utiliza-se a tag < em > < /em> para dar <em>ênfase em itálico</em>.</p>
 <p>DICA: para configurar a transferência de carcteres para dentro de uma tag de forma automática faça o seguinte:</p>
 <p>Selecione o trecho, aperte CTRL+SHIFT+P. Na janela que abrirá em seguida selecione a opção: <strong>"Emmet: Wrap whith Abbreviation"</strong> ou digite "abb" para encontrar essa opção. Para envelopar o trecho desejado de forma rápida selecione os caracteres, use CTRL+SHIFT+P, em seguida, digite a tag de interesse e dê ENTER.</p>
-<h2>Marca-Texto</h2>
+    <h2>Marca-Texto</h2>
 <p>Para criar um <mark>texto marcado</mark> utiliza-se a tag < mark > < /mark >.</p>
-<h2>Texto <del>grande</del> e pequeno</h2>
+    <h2>Texto <del>grande</del> e pequeno</h2>
 <p>Para destacar um trecho com <small>letras pequenas</small> utiliza-se a tag < small > < /small > .</p>
 <h2>Texto deletado e texto incluído</h2>
 <p>Para marcar um <del>texto como excluído</del>, indicando que ele deve ser lido mas não considerado, utiliza-se a tag < del > < /del>.</p>
 <p>Para marcar um <ins>texto como inserido</ins>, enfatizando que ele foi adicionado depois utiliza-se a tag  < ins > < /ins>.</p>
-<h2>Texto sobrescrito e subscrito</h2>
+    <h2>Texto sobrescrito e subscrito</h2>
 <p>Para texto sobrescrito utiiza-se atag < sup > < /sup>. Exemplo:x< sup >20 < /sup > +3 retorna: <strong>x<sup>20</sup>+3</strong></p>
 <p>Para texto subscrito utiliza-se a tag <  sub > < /sub>. Exemplo:H < sub> 2 < /sub > 0 retorna:<strong> H<sub>2</sub>0</strong></p>
-<h2>Inserindo código-fonte em páginas</h2>
+    <h2>Inserindo código-fonte em páginas</h2>
 <p>A tag < code > é usada para mostrar um trecho de código fonte, como uma instrução ou uma função. Ela preserva a formatação do código, mas não o executa. </p>
 <p>Exemplo:  <code>document.getElementById('teste')</code></p>
 <p>Para manter a formatação de códigos grandes utiliza-se o, < code > dentro da tag < pre > < /pre>.</p>
 <p>Exemplo: <br>< pre ><br>... <strong>< code ></strong><br>1 x +[1,2,3] <br>2 y = x<br>3 x.append(4)<br>4 print(y)<br>  ...<strong>< /code ><br>< /pre > </strong></p>
-<h2>Citações</h2>
+    <h2>Citações</h2>
 <p>Para citações sem quebra de linha utiliza-se a <q>tag</q> < q > < /q >.</p>
 <p>Para uma citação em bloco, com quebra de linha, utilza-se a tag < blockquote > < /blockquote >. A citação aparecerá deslocada. É possível criar o parâmetro: <strong>cite= </strong>e inserir o link da citação. Este parâmetro é importante para os mecanismos de busca.</p>
-<h2>Abreviações</h2>
+    <h2>Abreviações</h2>
 <p>Utiliza-se a tag < abbr title=""> < /abbr >. Em title= digite o significado da sigla ou abreviação. O resultado na página será que ao passar o mouse por cima aparecerá o conteúdo do title</p>
-<h2>Texto invertido</h2>
+    <h2>Texto invertido</h2>
 <p>Para inverter um texto utiliza-se a tag < bdo dir=""> < /bdo >. Em dir= digite rtl para o texto ser exibido da direita para esquerda. Digite ltr para exibir o texto da esquerda para a direita.</p>
-<h2>Listas</h2>
-<h3>Listas Ordenadas (OL)</h3>
+    <h2>Listas</h2>
+    <h3>Listas Ordenadas (OL)</h3>
 <p>Utiliza-se a tag < ol > < /ol > e dentro dela a tag < li> < /li>, que são os itens de lista. O < /li > é opcional.</p>
 <p>
     < ol>
@@ -82,8 +82,17 @@
     <br>< /ol>
 </p>
 <p>O parâmetro type=, dentro de < ol>, permite alterar o caractere da numeração: pode ser 1, A, a, I ou i.</p>
-    <p>Se quiser que a lista seja numerada apartir de úm número ou letra diferente, adicione depois do type= o parâmetro start= e digite o número ou letra.</p>
-<h3>Listas não ordenadas (UL)</h3>
+<p>Se quiser que a lista seja numerada a partir de um número diferente, adicione depois do <strong>type=1</strong> o parâmetro start= e digite o número; se quiser uma letra diferente digite depois do <strong>type=a</strong> o número correspondente da letra no alfabeto, por exemplo: 5=e, 12=l</p>
+    <h3>Listas não ordenadas (UL)</h3>
 <p>Utiliza-se a tag < ul> < /ul> e dentro dela a tag < li> < /li>. Nestas listas a ordem dos itens não é importante. Para alterar o caractere dos marcadores utiliza-se o parâmetro type=. Os tipos podem ser: circle, disc ou square.</p>
+    <h3>Listas mistas</h3>
+<p>Para colocar uma lista dentro da outra basta inserir a tag < ol > < /ol> ou < ul > < /ul> dentro da < li > < /li> correspondente.</p>
+    <h3>Lista de definições</h3>
+<p>Utiliza-se a tag < dt> < /dt> para o TERMO e < dd> < /dd> para a descrição.</p>
+<h2>Links Externos</h2>
+<p>Utiliza-se a tag < a href=""> < /a>.Dentro das aspas de href insira a url; depois das aspas insira a palavra ou frase que será clicável para direcionar ao link. Este conteúdo depois das aspas é que ficará visível no site.</p>
+<p>< <strong>a href="</strong>https://www.youtube.com/watch?v=LeOVXQDsAIY&list=PLHz_AreHm4dkZ9-atkcmcBaMZdmLHft8n&index=27<strong>"</strong> Como inserir links no Site> <strong>< /a></strong></p>
+<p>Para que este link seja abrto em outra janela adicione os parâmetros target="_blank"
+</p>
 </body>
 </html>
