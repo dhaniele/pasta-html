@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página 002</title>
+</head>
+<body>
+     <h3>Links internos</h3>
+    <p>Para inserir um link interno tenha os arquivos html na mesma pasta. Uliliza-se a tag <br><strong>< a href="</strong>arquivo da página*<strong>" rel="next"></strong> texto clicável*<strong>< /a></strong> para a próxima página ou <br><strong>< a href="</strong>arquivo da página*<strong>" rel="prev"></strong> texto clicável*<strong> < /a></strong> para a página anterior</p>Caso a página para a qual deseja voltar esteja em outra pasta insira "../" antes do nome do arquivo. Exemplo: < a href="../index. html"> texto clicável* < /a>.<p>
+    <h3>Links para download</h3>
+    <h4>Download de PDF</h4>
+       Insira em href="" o local do arquivo que deseja disponibilizar para download.
+        <p>< a href="arquivos-pdf/primeiros-passos-musica-classica.pdf">Arquivo png< /a></p>
+       <p>Adicione os parâmetros download="" e type="". Exemplo; <br>< a href="arquivos-pdf/primeiros-passos-musica-classica.pdf" download="arquivos-pdf/primeiros-passos-musica-classica.pdf" type="application/pdf">Arquivo png< /a></p>
+
+    <ul>
+        <li><a href="arquivos-pdf/primeiros-passos-musica-classica.pdf" download="arquivos-pdf/primeiros-passos-musica-classica.pdf" type="application/pdf">Arquivo PDF</a></li>
+        <li><a href="imagens/paisagem-650.jpeg">Arquivo jpeg</a></li>
+    </ul>
+        <p>Site que contém a lista de Media Types: https://www.iana.org/assignments/media-types/media-types.xhtml</p>
+    <h2>Imagens Dinâmicas</h2>
+    <p>Tamanhos diferentes de imagens para serem usadas de acordo com o tamanho da tela: 300x300 para celular, 700x700 para tablet e 1000x1000 para Pc, como exemplo</p>
+    <p>A tag < picture>< /picture> permite o uso de diferentes sources. Recomenda-se iniciar inserindo a imagem de maior tamanho e incluir as demais em ordem decrescente, logo acima da anterior.</p>
+    <p>Dentro de < picture>< /picture> adicione a tag < img src="arquivo da imagem*" alt="descrição da imagem">. Logo acima desta tag adicione a tag source:media</p>
+    <p>Modifique source media="(<strong>min</strong>-width: )" para <strong>max</strong>. Adicione em max-width: o tamanho da imagem a ser carregada, somando 50px. Exemplo: < source media="(min-width:1050px).</p>
+    <p>O navegador irá carregar por padrão a imagem maior. Caso a tela tenha o tamanho menor que o estabelecido em max-widht, será carregada a imagem seguinte. Em srcset="" adicione o arquivo desta imagem. Logo em seguida adicione no parâmetro type="" o media type correspondente ao arquivo.</p>
+    <p>Para inserir mais tamanhos repita o processo, adicionando source logo acima.</p>
+    <p>< picture> <br>
+        < source media="(min-width: )" srcset="" type="image/"> <br>
+        < source media="(min-width: )" srcset="" type="image/"> <br>
+        < img src="" alt=""> <br>
+    < /picture></p>
+    <h2>Áudio</h2>
+         <p>Utilize a tag < audio>< /audio> <br><strong>< audio src="</strong>audios/drive-breakbeat-173062.mp3<strong>
+             " controls>< /audio></strong></p>
+             
+
+
+
+        <a href="index.html" rel=""prev>Página 01</a>
+</body>
+</html>

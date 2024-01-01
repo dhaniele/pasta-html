@@ -85,14 +85,18 @@
 <p>Se quiser que a lista seja numerada a partir de um número diferente, adicione depois do <strong>type=1</strong> o parâmetro start= e digite o número; se quiser uma letra diferente digite depois do <strong>type=a</strong> o número correspondente da letra no alfabeto, por exemplo: 5=e, 12=l</p>
     <h3>Listas não ordenadas (UL)</h3>
 <p>Utiliza-se a tag < ul> < /ul> e dentro dela a tag < li> < /li>. Nestas listas a ordem dos itens não é importante. Para alterar o caractere dos marcadores utiliza-se o parâmetro type=. Os tipos podem ser: circle, disc ou square.</p>
-    <h3>Listas mistas</h3>
+        h3>Listas mistas</h3>
 <p>Para colocar uma lista dentro da outra basta inserir a tag < ol > < /ol> ou < ul > < /ul> dentro da < li > < /li> correspondente.</p>
     <h3>Lista de definições</h3>
 <p>Utiliza-se a tag < dt> < /dt> para o TERMO e < dd> < /dd> para a descrição.</p>
-<h2>Links Externos</h2>
-<p>Utiliza-se a tag < a href=""> < /a>.Dentro das aspas de href insira a url; depois das aspas insira a palavra ou frase que será clicável para direcionar ao link. Este conteúdo depois das aspas é que ficará visível no site.</p>
+    <h2>Links</h2>
+        <h3>Links Externos</h3>
+<p>Utiliza-se a tag < a href="url*"> texto clicável*< /a>.Dentro das aspas de href insira a url; entre as tags de abertura e fechamento estará o texto que será clicável para direcionar ao link.</p>
 <p>< <strong>a href="</strong>https://www.youtube.com/watch?v=LeOVXQDsAIY&list=PLHz_AreHm4dkZ9-atkcmcBaMZdmLHft8n&index=27<strong>"</strong> Como inserir links no Site> <strong>< /a></strong></p>
-<p>Para que este link seja abrto em outra janela adicione os parâmetros target="_blank"
-</p>
+<p>Para que este link seja aberto em outra janela adicione os parâmetros target="_blank" rel="external". Para abrir na mesma janela o uso do parâmetro target="_self" é opcional.</p>
+
+<p>Exemplo: <strong>< a href="</strong>url*<strong>" target"_blank" rel="external"></strong> texto clicável*<strong>< /a></strong><br><strong>< a href="</strong>https://www.youtube.com/watch?v=LeOVXQDsAIY&list=PLHz_AreHm4dkZ9-atkcmcBaMZdmLHft8n&index=27* <strong> target="_blank" rel="external</strong>>" Como inserir links no Site*<strong> < /a></strong></p>
+<p>Caso o link ou o conteúdo do site externo não seja confiável, utilize parâmetro rel="nofollow" </p>
+<p><a href="pag002.html" rel=""next>Página 02</a></p>
 </body>
 </html>
