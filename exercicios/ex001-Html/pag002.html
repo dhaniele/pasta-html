@@ -8,7 +8,9 @@
 <body>
      <h3>Links internos</h3>
     <p>Para inserir um link interno tenha os arquivos html na mesma pasta. Uliliza-se a tag <br><strong>< a href="</strong>arquivo da página*<strong>" rel="next"></strong> texto clicável*<strong>< /a></strong> para a próxima página ou <br><strong>< a href="</strong>arquivo da página*<strong>" rel="prev"></strong> texto clicável*<strong> < /a></strong> para a página anterior</p>Caso a página para a qual deseja voltar esteja em outra pasta insira "../" antes do nome do arquivo. Exemplo: < a href="../index. html"> texto clicável* < /a>.<p>
+
     <h3>Links para download</h3>
+
     <h4>Download de PDF</h4>
        Insira em href="" o local do arquivo que deseja disponibilizar para download.
         <p>< a href="arquivos-pdf/primeiros-passos-musica-classica.pdf">Arquivo png< /a></p>
@@ -19,6 +21,7 @@
         <li><a href="imagens/paisagem-650.jpeg">Arquivo jpeg</a></li>
     </ul>
         <p>Site que contém a lista de Media Types: https://www.iana.org/assignments/media-types/media-types.xhtml</p>
+
     <h2>Imagens Dinâmicas</h2>
     <p>Tamanhos diferentes de imagens para serem usadas de acordo com o tamanho da tela: 300x300 para celular, 700x700 para tablet e 1000x1000 para Pc, como exemplo</p>
     <p>A tag < picture>< /picture> permite o uso de diferentes sources. Recomenda-se iniciar inserindo a imagem de maior tamanho e incluir as demais em ordem decrescente, logo acima da anterior.</p>
@@ -31,13 +34,28 @@
         < source media="(min-width: )" srcset="" type="image/"> <br>
         < img src="" alt=""> <br>
     < /picture></p>
+
     <h2>Áudio</h2>
          <p>Utilize a tag < audio>< /audio> <br><strong>< audio src="</strong>audios/drive-breakbeat-173062.mp3<strong>
              " controls>< /audio></strong></p>
          <audio src="audios/drive-breakbeat-173062.mp3" controls></audio>
-         <p>Outra forma é usar a tagg < audio >< /audio></p>
 
+         <h3>Múltiplos formatos de audio</h3>
+         <p>Para ter maior compatibilidade com os navegadores utiliza-se vários formatos de Áudio: MP3, OGG e WAV. Adicione os diferentes arquivos da seguinte forma:</p>
+         <p>
+             < audio> <br>
+                < source src="audio.mp3" type="audio/mpeg"> <br>
+                < source src="audio.ogg" type="audio/ogg"> <br>
+                < source src="audio.wav" type="audio/wav">  São muitos pesados, recomenda-se não usar.<br>
+                     < /audio>
+         </p>
 
+         <p>Outro parâmetro: preload="metadata", carrega as informações do arquivo de áudio.</p>
+
+     <h2>Vídeos</h2>
+     <p>Handbrake: Ferramenta gratuita para converter os vídeos.<!--Não funcionou no meu computador. Pediu para instalar net.6 e eu não conclui o processo-->
+     </p>
+     <p>Formatos de vídeo: MP4 e MP4V, WEBM E OGG</p>
 
         <a href="index.html" rel=""prev>Página 01</a>
 </body>
